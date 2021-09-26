@@ -1,6 +1,6 @@
-namespace RoleplayGame
+namespace Library
 {
-    public class Spell
+    public class Spell : IDefensiveItem : IOffensiveItem : IMagicItem
     {
         public int AttackValue
         {

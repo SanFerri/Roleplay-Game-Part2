@@ -1,6 +1,6 @@
-namespace RoleplayGame
+namespace Library
 {
-    public class Staff
+    public class Staff : IOffensiveItem : IDefensiveItem
     {
         public int AttackValue 
         {

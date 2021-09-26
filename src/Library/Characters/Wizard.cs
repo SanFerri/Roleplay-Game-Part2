@@ -1,6 +1,6 @@
-namespace RoleplayGame
+namespace Library
 {
-    public class Wizard
+    public class Wizard : IMagician
     {
         private int health = 100;
 

@@ -1,6 +1,6 @@
-namespace RoleplayGame
+namespace Library
 {
-    public class Knight
+    public class Knight : ICharacter
     {
         private int health = 100;
 
