@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Staff : IOffensiveItem : IDefensiveItem
+    public class Staff : IOffensiveItem , IDefensiveItem
     {
         public int AttackValue 
         {

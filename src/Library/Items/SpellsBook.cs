@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Library
 {
-    public class SpellsBook : IOffensiveItem : IDefensiveItem : IMagicItem
+    public class SpellsBook : IOffensiveItem , IDefensiveItem , IMagicItem
     {
         public Spell[] Spells { get; set; }
         

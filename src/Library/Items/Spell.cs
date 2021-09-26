@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Spell : IDefensiveItem : IOffensiveItem : IMagicItem
+    public class Spell : IDefensiveItem , IOffensiveItem , IMagicItem
     {
         public int AttackValue
         {

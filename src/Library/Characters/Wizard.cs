@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Wizard : IMagician
+    public class Wizard:IMagician
     {
         private int health = 100;
 

@@ -2,7 +2,7 @@ namespace Library
 {
     public interface IMagicItem
     {
-        int AttackValue();
-        int DefenseValue();
+        int AttackValue{get; }
+        int DefenseValue{get; }
     }    
 }

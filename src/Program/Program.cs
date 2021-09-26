@@ -1,5 +1,5 @@
 ﻿using System;
-using RoleplayGame;
+using Library;
 
 namespace Program
 {

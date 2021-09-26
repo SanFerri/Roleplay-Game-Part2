@@ -2,12 +2,13 @@ namespace Library
 {
     public interface IMagician
     {
-        int AttackValue();
-        int DefenseValue();
-        int Health();
+        int AttackValue{get; }
+        int DefenseValue{get; }
+        int Health{get; }
         void ReceiveAttack(int power);
         void Cure();
-        IMagicItem Staff { get; set; }
-        IMagicItem SpellsBook { get; set; }
+        Staff Staff { get; set; }
+        SpellsBook SpellsBook { get; set; }
+        string Name {get; set; }
     }   
 }

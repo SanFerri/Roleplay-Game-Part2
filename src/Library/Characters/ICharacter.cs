@@ -2,10 +2,11 @@ namespace Library
 {
     public interface ICharacter
     {
-        int AttackValue();
-        int DefenseValue();
-        int Health();
+        int AttackValue{get; }
+        int DefenseValue{get; }
+        int Health{get; }
         void ReceiveAttack(int power);
         void Cure();
+        string Name {get; set; }
     }   
 }

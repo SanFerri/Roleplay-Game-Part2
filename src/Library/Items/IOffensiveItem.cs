@@ -2,6 +2,6 @@ namespace Library
 {
     public interface IOffensiveItem
     {
-    int AttackValue(); 
+    int AttackValue{get; }
     }    
 }
