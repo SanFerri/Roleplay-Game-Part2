@@ -1,12 +1,10 @@
 using NUnit.Framework;
 using Library;
 
-namespace Test.Library;
-
-
+namespace Test.Library
 {
     public class Tests
-    {
+    {        
         public SpellsBook book = new SpellsBook();
         public book.Spells = new Spell[]{ new Spell() };
 
@@ -17,12 +15,12 @@ namespace Test.Library;
         public Dwarf gimli = new Dwarf("Gimli");
         public gimli.Axe = new Axe();
         public gimli.Helmet = new Helmet();
-
+        
         [Test]
         public void ReceiveAttackTest()
         {
             int expected = gandalf.health - gimli.Axe.attack;
-            gandlf.ReceiveAttack(gimli.AttackValue());
+            gandalf.ReceiveAttack(gimli.AttackValue());
             int actual = gandalf.health;
             Assert.AreEqual(expected, actual);
         }
@@ -30,7 +28,11 @@ namespace Test.Library;
         [Test]
         public void CureTest()
         {
-            Assert.Pass();
+            int expected = 100;
+            gandalf.ReceiveAttack(gimli.AttackValue());
+            gandalf.Cure();
+            int actual = gandalf.health
+            Assert.AreEqual(expected, actual);
         }
 
     }
