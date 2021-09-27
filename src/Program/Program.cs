@@ -10,7 +10,7 @@ namespace Program
             SpellsBook book = new SpellsBook();
             book.Spells = new Spell[]{ new Spell() };
 
-            Wizard gandalf = new Wizard("Gandalf");
+            IMagician gandalf = new Wizard("Gandalf");
             gandalf.Staff = new Staff();
             gandalf.SpellsBook = book;
 
