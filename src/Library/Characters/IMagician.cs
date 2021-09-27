@@ -1,14 +1,12 @@
 namespace Library
 {
-    public interface IMagician
+    /// <summary>
+    /// IMagician es subtipo de ICharacter ya que posee los mismos metodos que ICharacter menos el Staff, y SpellsBook
+    /// que es lo que tiene de diferente un Wizard de las demas clases.
+    /// </summary>
+    public interface IMagician : ICharacter
     {
-        int AttackValue{get; }
-        int DefenseValue{get; }
-        int Health{get; }
-        void ReceiveAttack(int power);
-        void Cure();
         Staff Staff { get; set; }
         SpellsBook SpellsBook { get; set; }
-        string Name {get; set; }
     }   
 }
